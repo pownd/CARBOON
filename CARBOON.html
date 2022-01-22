@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CARBOON</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+    <section class="login-form">
+        <h1>CARBOON</h1>
+        <form action="">
+            <div class="int-area">
+                <input type="text" name="id" id="id"
+                autocapitalize="off" required>
+                <label for ="id">FIRST</label>
+            </div>
+            <div class="int-area">
+            <input type="password" name="pw" id="pw"
+            autocapitalize="off" required>
+            <label for ="pw">SECOND</label>
+            </div>
+            <div class="btn-area">
+                <button type="submit">저장</button>
+            </div>
+        </form>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+           const buttonA = document.querySelector('button')
+           buttonA.addEventListener('click', (event) => {
+            event.currentTarget.value = alert('저장 완료')
+           })
+           })
+    </script>
+    
+</body>
+</html>
